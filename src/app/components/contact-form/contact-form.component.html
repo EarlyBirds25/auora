@@ -1,0 +1,41 @@
+<section
+    class="flex overflow-hidden relative flex-col justify-center items-end px-20 py-24 w-full font-bold bg-darkBg dark:bg-lightBg text-textLight dark:text-textDark text-right min-h-[762px] max-md:px-5 max-md:pt-24 max-md:max-w-full">
+    <img src="../../../assets/images/Wireframe-5.png" class="object-cover absolute inset-0 size-full"
+        alt="Contact form background" />
+    
+
+    <form  #form="ngForm" (ngSubmit)="onSubmit()" class="bg-darkBg dark:bg-lightBg text-textLight dark:text-textDark flex relative flex-col px-6 pt-10 pb-16 max-w-full  rounded-2xl w-[602px] max-md:px-5">
+        <h2 class="self-end text-5xl leading-none text-amber-700 max-md:mr-1">
+            سجل اهتمامك
+        </h2>
+
+        <div class="w-full mt-20 text-xl bg-darkBg dark:bg-lightBg leading-relaxed  rounded-xl  max-w-md mx-auto">
+            <div >
+                <div class="flex flex-col mb-4 py-2">
+                    <label for="name" class="text-right font-semibold"> * الاسم</label>
+                    <input id="name" type="text" placeholder=""     name="name"       [(ngModel)]="formData.name"
+
+                        class="mt-2 bg-darkBg dark:bg-lightBg  py-2 border-b outline-none border-gray-950 focus:border-amber-700" />
+                </div>
+        
+                <div class="flex flex-col mb-6 py-2">
+                    <label for="phone" class="text-right font-semibold">* رقم الجوال </label>
+                    <input id="phone"  name="phone" type="tel" placeholder=""             [(ngModel)]="formData.phone"
+
+                        class="mt-2 bg-darkBg dark:bg-lightBg   border-b outline-none border-gray-950 focus:border-amber-700" />
+                </div>
+        
+               
+        </div>
+        </div>
+        
+        
+
+        <button type="submit"
+            class="flex overflow-hidden flex-col justify-center self-center mx-auto mt-10 max-w-full text-lg tracking-normal rounded-none leading-none text-center text-white bg-[#01447b] min-h-[54px] w-[269px]">
+            <div class="flex-1 gap-2 self-stretch px-6 py-2.5 size-full max-md:px-5">
+                احجز الان
+            </div>
+        </button>
+    </form>
+</section>
