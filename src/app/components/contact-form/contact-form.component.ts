@@ -1,6 +1,7 @@
 import { Component } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import Swal from 'sweetalert2';
+import * as Aos from "aos";
 
 
 @Component({
@@ -14,6 +15,9 @@ export class ContactFormComponent {
     name: '',
     phone: '',
   };
+  ngAfterViewInit() {
+        Aos.init(); // Initialize AOS
+                  }
 
   onSubmit() {
     // تحقق بسيط قبل الإرسال

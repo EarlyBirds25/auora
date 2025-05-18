@@ -1,5 +1,7 @@
-import { Component } from "@angular/core";
+import { AfterViewInit, Component } from "@angular/core";
 import { CommonModule } from "@angular/common";
+import * as Aos from "aos";
+
 
 @Component({
   selector: "services-section",
@@ -7,7 +9,8 @@ import { CommonModule } from "@angular/common";
   styleUrls: ['./services-section.component.scss'],
    
  })
-export class ServicesSectionComponent {
+export class ServicesSectionComponent implements AfterViewInit {
+
 
   services = [
     { icon: '../../../assets/images/ion_school-outline (1).svg', alt: 'School Icon', text: 'مدارس ودور حضانة' },
@@ -17,4 +20,8 @@ export class ServicesSectionComponent {
     { icon: '../../../assets/images/material-symbols-light_mosque-outline (1).svg', alt: 'Mosque Icon', text: 'مساجد وجوامع' },
     { icon: '../../../assets/images/ph_hospital-light (1).svg', alt: 'Hospital Icon', text: 'مستشفيات ومراكز صحية' },
   ];
+
+   ngAfterViewInit() {
+    Aos.init(); // Initialize AOS
+  }
 }

@@ -26,6 +26,7 @@ module.exports = {
         secondaryDark: '#171717', 
         accentDark: '#b45309', 
         softBgDark: '#fff7ed', 
+        Blue:'#01447B'
       },
       fontFamily: {
         sans: ['Inter', 'Arial', 'sans-serif'], 

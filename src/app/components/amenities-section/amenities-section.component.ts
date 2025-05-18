@@ -1,5 +1,6 @@
 import { Component } from "@angular/core";
 import { CommonModule } from "@angular/common";
+import * as Aos from "aos";
 
 @Component({
   selector: "amenities-section",
@@ -8,6 +9,9 @@ import { CommonModule } from "@angular/common";
    
  })
 export class AmenitiesSectionComponent {
+   ngAfterViewInit() {
+          Aos.init(); // Initialize AOS
+        }
   cards = [
     { image: '../../../assets/images/entrance-svgrepo-com 1 (1).svg', alt: 'Double height entrance', text: 'مدخل دبل هايت بتصميم زجاجي فاخر.' },
     { image: '../../../assets/images/airconditioning-so-svgrepo-com 1.svg', alt: 'Hidden AC system', text: 'نظام تكييف مخفي لمناطق المعيشة الرئيسية.' },

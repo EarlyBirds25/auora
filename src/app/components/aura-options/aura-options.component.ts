@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import * as Aos from 'aos';
 
 @Component({
   selector: 'app-aura-options',
@@ -8,6 +9,9 @@ import { Component, OnInit } from '@angular/core';
 export class AuraOptionsComponent implements OnInit {
 
   constructor() { }
+   ngAfterViewInit() {
+            Aos.init(); // Initialize AOS
+          }
 
   ngOnInit() {
   }

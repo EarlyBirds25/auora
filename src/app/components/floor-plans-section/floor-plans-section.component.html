@@ -1,40 +1,71 @@
 <section   class="flex overflow-hidden flex-col justify-center items-center px-20 py-40 w-full bg-darkBg dark:bg-lightBg text-textLight dark:text-textDark max-md:px-5 max-md:py-24 max-md:max-w-full">
-    <div class="flex flex-col mb-0 w-full max-w-[1196px] max-md:mb-2.5 max-md:max-w-full">
-        <header class="flex flex-col self-end pl-7 max-w-full w-[586px] max-md:pl-5">
+    <div class="flex flex-col gap-6 mb-0 w-full max-w-[1196px] max-md:mb-2.5 max-md:max-w-full">
+        <header class="flex flex-col space-y-4 self-end pl-7 max-w-full  max-md:pl-5">
         
-            <div class=" text-right justify-center text-amber-700 text-5xl font-bold font-['Almarai'] leading-[80px] tracking-tight">مخططات الفيلا </div>
-            <nav   class="flex gap-5 justify-between items-center mt-8 text-lg text-center text-amber-700 max-md:max-w-full">
-                <button class="self-stretch text-[16px]  sm:text-2xl my-auto rotate-[0.015265988878580465rad]">
-                    الدور الثالث
+            <h4 data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300" id="tittle1" class="font-['Almarai']">
+                تصاميم فيلا رائعة
+            </h4>
+            <h2 data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300" id="tittle2" class="font-['Almarai']">مخططات الفيلا </h2>
+            <nav data-aos="fade-down-right" data-aos-duration="2000" data-aos-delay="400" dir="rtl" class="flex gap-5 justify-between items-center mt-12 text-center text-amber-700 max-md:max-w-full">
+                <button class="active font-['Almarai']">
+                    الدور الأرضي
                 </button>
-                <button class="self-stretch text-[16px]  sm:text-2xl my-auto rotate-[0.015265988878580465rad]">
-                    الدور الثاني
-                </button>
-                <button class="self-stretch text-[16px]  sm:text-2xl my-auto rotate-[0.0047663240772613585rad]">
+                
+                <button class="font-['Almarai']">
                     الدور الاول
                 </button>
-                <button
-                    class=" p-1 self-stretch  font-bold text-amber-700 whitespace-nowrap bg-sky-100 bg-opacity-40 max-md:px-5">
-                    الارضي
+                <button class="font-['Almarai']">
+                    الدور الثاني
                 </button>
+                
             </nav>
         </header>
 
-        <div class="flex relative gap-[107px] items-center mt-8 w-full max-md:max-w-full  flex-col md:flex-row">
-            <div class="flex z-0 flex-col self-stretch my-auto min-w-60 w-[661px] max-md:max-w-full">
-                <h3 class="px-0.5 py-5 text-3xl text-right text-amber-700 max-md:max-w-full">
-                    الدور الارضي
-                </h3>
-
-                
-                     <p  dir="rtl"
-                         class="text-textLight dark:text-textDark z-0 self-start text-2xl text-right leading-[52px] w-full sm:w-[661px]  max-md:max-w-full">
-                         • غرفة حارس مع حمام.• جلسات خارجية أمامية وخلفية.• كراج مع تأسيس
-                         شاحن سيارة كهربائية• ارتداد جانبي واسع مع مدخل عائلي• مجلس رجال
-                         وغرفة طعام (8.6 متر × 5.0 متر) مع دورة مياه ومغاسل.صالة معيشة (5 متر
-                         × 5 متر) مع دورة مياه.مطبخ رئيسي (4.2 متر × 5.3 متر).<br />
-                     </p>
-                <button
+        <div dir="rtl" class="details_container ">
+            <div class="">
+              <img data-aos="fade-left-up" data-aos-duration="2000" data-aos-delay="800" src="../../../assets/images/Rectangle 10075.png" alt="">
+              <div data-aos="flip-right" data-aos-duration="2000" data-aos-delay="800" class="info flex flex-col gap-1">
+                     <div class="_item  border-b border-white font-bold">
+                          <span>الإجمالي</span>
+                          <span>9.6متر مربع </span>
+                     </div>
+                      <div class="_item">
+                          <span>مدخل دبل هايت</span>
+                          <span>9.6متر مربع </span>
+                     </div>
+              
+               
+                     <div class="_item">
+                          <span>مجلس رجال</span>
+                          <span>9.6متر مربع </span>
+                     </div>
+              
+              
+                     <div class="_item">
+                          <span>صالة المعيشة</span>
+                          <span>9.6متر مربع </span>
+                     </div>
+             
+               
+                     <div class="_item">
+                          <span>المطبخ</span>
+                          <span>9.6متر مربع </span>
+                     </div>
+              
+               
+                     <div class="_item">
+                          <span>جلسة خارجية خلفية</span>
+                          <span>9.6متر مربع </span>
+                     </div>
+          
+               
+                     <div class="_item">
+                          <span>غرفة حارس مع دورة مياه</span>
+                          <span>9.6متر مربع </span>
+                     </div>
+              </div>
+         
+                <!-- <button
                     class="flex rounded-none overflow-hidden flex-col justify-center self-end mt-8  max-w-full text-base font-bold tracking-normal leading-none text-center text-white bg-[#01447b] min-h-14 w-[182px] max-md:mt-10 max-md:mr-0.5">
                     <div class="flex flex-1 gap-2 justify-center items-center py-2.5 pr-6 pl-4 size-full max-md:pr-5">
                         <img src="../../../assets/images/icon.svg"
@@ -42,11 +73,29 @@
                             alt="Download icon" />
                         <span class="self-stretch my-auto">تحميل المخطط</span>
                     </div>
-                </button>
+                </button> -->
+                 
+      
+        
+         <!-- <button class="flex w-48 h-16 bg-white bg-opacity-5 border border-white backdrop-blur-[5px] rounded-none">
+            <div class="">
+                <span class="text-white">تشغيل VR</span>
+            
+            </div>
+          </button>   -->
+          <button class="">
+            <span>تشغيل VR</span>
+            <img src="../../../assets/images/vr.svg" class="w-10 h-10" alt="" srcset="">
+          </button>
+        
+  
             </div> 
-            <img src="../../../assets/images/th 1.png"
-                class="object-contain z-0 self-stretch my-auto aspect-square min-w-60 w-[428px] max-md:max-w-full"
+                  <div class="img_container">
+    <img src="../../../assets/images/Picture1 1.png"
+                class=""
                 alt="Floor plan" />
+                  </div>
+        
         </div>
     </div>
 </section>

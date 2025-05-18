@@ -1,0 +1,64 @@
+#tittle1{
+    font-family: Almarai;
+font-weight: 400;
+font-size: 20px;
+line-height: 100%;
+letter-spacing: 0px;
+text-align: center;
+color: #01447B;
+
+
+}
+#tittle2{
+    font-family: Almarai;
+font-weight: 700;
+font-size: 38px;
+line-height: 140%;
+letter-spacing: -2%;
+text-align: center;
+color: #B9562F;
+@media(max-width:767px){
+    font-size: 30px;
+}
+}
+header{
+    margin: auto;
+}
+.suppliers_container{
+    display: flex;
+    padding: 0rem 4rem;
+    // margin: auto;
+    // flex-wrap: wrap;
+    width: 100%;
+    
+    @media(max-width:767px){
+        flex-wrap: wrap;
+        row-gap: 0.7rem;
+    }
+    .sup{
+        
+        width: 20%;
+        padding: 1rem 4rem;
+        text-align: center;
+        @media(max-width:767px){
+        width: 20%;
+    }
+       
+    }
+     .sup:not(:first-child){
+        border-right: 1px solid #E1D6CC;
+    }
+    .sup1{
+          
+        width: 30%;
+        padding: 1rem 4rem;
+        text-align: center;
+        
+    }
+    .sup1:not(:first-child){
+        border-right: 1px solid #E1D6CC;
+    }
+}
+#container{
+    row-gap: 2rem;
+}

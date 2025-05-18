@@ -33,10 +33,12 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/aos/dist/aos.css"
             ],
             "scripts": [
-              "node_modules/preline/preline.js"
+              "node_modules/preline/preline.js",
+              "node_modules/aos/dist/aos.js"
             ]
           },
           "configurations": {
@@ -98,12 +100,16 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/aos/dist/aos.css"
             ],
             "scripts": []
           }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "e18eae2e-51d3-49ef-b5be-9a5f51eac609"
   }
 }

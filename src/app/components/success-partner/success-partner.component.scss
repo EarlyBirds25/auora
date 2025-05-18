@@ -1,0 +1,48 @@
+.container{
+    // background: #FFF9F7;
+}
+#tittle1{
+    font-family: Almarai;
+font-weight: 400;
+font-size: 20px;
+line-height: 100%;
+letter-spacing: 0px;
+text-align: center;
+color: #01447B;
+
+
+}
+#tittle2{
+    font-family: Almarai;
+font-weight: 700;
+font-size: 38px;
+line-height: 140%;
+letter-spacing: -2%;
+text-align: center;
+color: #B9562F;
+@media(max-width:767px){
+    font-size: 30px;
+}
+}
+header{
+    margin: auto;
+}
+.slider {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.5s ease-in-out; /* Smooth transition */
+//   overflow: hidden; /* Hide overflow */
+  width: 100%; /* Ensure full width */
+  column-gap: 1rem;
+}
+
+.slide {
+  min-width: 20%; /* Each image takes full width of the container */
+  box-sizing: border-box; /* Include padding and border in width calculation */
+}
+
+.slide img {
+  width: 70%; /* Image fills the slide */
+  height: auto; /* Maintain aspect ratio */
+}

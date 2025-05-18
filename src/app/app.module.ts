@@ -23,6 +23,8 @@ import { ContactFormComponent } from './components/contact-form/contact-form.com
 import { FooterComponent } from './components/footer/footer.component';
 import { AuraOptionsComponent } from './components/aura-options/aura-options.component';
 import { AnimateOnScrollDirective } from './animate-on-scroll.directive';
+import { SuppliersSectionComponent } from './components/suppliers-section/suppliers-section.component';
+import { SuccessPartnerComponent } from './components/success-partner/success-partner.component';
 
 
 // Exported factory function
@@ -48,7 +50,9 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
     FooterComponent,
     AuraOptionsComponent,
     AnimateOnScrollDirective,
-    AnimateOnScrollDirective
+    AnimateOnScrollDirective,
+    SuppliersSectionComponent,
+    SuccessPartnerComponent
   ],
   imports: [
     BrowserModule,

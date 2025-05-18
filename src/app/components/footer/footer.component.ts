@@ -1,5 +1,6 @@
 import { Component } from "@angular/core";
 import { CommonModule } from "@angular/common";
+import * as Aos from "aos";
 
 @Component({
   selector: "footer-component",
@@ -7,4 +8,8 @@ import { CommonModule } from "@angular/common";
   styleUrls: ['./footer.component.scss'], 
    
  })
-export class FooterComponent {}
+export class FooterComponent {
+  ngAfterViewInit() {
+          Aos.init(); // Initialize AOS
+                    }
+}

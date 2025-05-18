@@ -1,5 +1,6 @@
 import { Component } from "@angular/core";
 import { CommonModule } from "@angular/common";
+import * as Aos from "aos";
 
 @Component({
   selector: "design-section",
@@ -7,4 +8,8 @@ import { CommonModule } from "@angular/common";
   styleUrls: ['./design-section.component.scss'], 
    
  })
-export class DesignSectionComponent {}
+export class DesignSectionComponent {
+  ngAfterViewInit() {
+        Aos.init(); // Initialize AOS
+      }
+}

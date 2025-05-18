@@ -1,0 +1,17 @@
+.about_tittle{
+    color: #01447B; 
+
+}
+#about_description{
+    line-height: 60px;
+}
+#icon_container{
+    box-shadow: 0px 0px 30px 0px #2F4C580F;
+    background: #E6F4FF;
+
+}
+@media (prefers-color-scheme: dark) {
+#about_tittle{
+      
+}
+}
