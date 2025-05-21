@@ -1,5 +1,5 @@
 #tittle1{
-    font-family: Almarai;
+  font-family: Almarai;
 font-weight: 400;
 font-size: 20px;
 line-height: 100%;
@@ -10,7 +10,7 @@ color: #01447B;
 
 }
 #tittle2{
-    font-family: Almarai;
+  font-family: Almarai;
 font-weight: 700;
 font-size: 38px;
 line-height: 140%;
@@ -18,47 +18,84 @@ letter-spacing: -2%;
 text-align: center;
 color: #B9562F;
 @media(max-width:767px){
-    font-size: 30px;
+  font-size: 30px;
 }
 }
 header{
-    margin: auto;
+  margin: auto;
 }
 .suppliers_container{
-    display: flex;
-    padding: 0rem 4rem;
-    // margin: auto;
-    // flex-wrap: wrap;
-    width: 100%;
-    
-    @media(max-width:767px){
-        flex-wrap: wrap;
-        row-gap: 0.7rem;
-    }
-    .sup{
-        
-        width: 20%;
-        padding: 1rem 4rem;
-        text-align: center;
-        @media(max-width:767px){
-        width: 20%;
-    }
-       
-    }
-     .sup:not(:first-child){
-        border-right: 1px solid #E1D6CC;
-    }
-    .sup1{
-          
-        width: 30%;
-        padding: 1rem 4rem;
-        text-align: center;
-        
-    }
-    .sup1:not(:first-child){
-        border-right: 1px solid #E1D6CC;
-    }
+  display: flex;
+  padding: 0rem 4rem;
+  // margin: auto;
+  // flex-wrap: wrap;
+  width: 100%;
+
+  @media(max-width:767px){
+      flex-wrap: wrap;
+      row-gap: 0.7rem;
+  }
+  .sup{
+
+      width: 20%;
+      padding: 1rem 4rem;
+      text-align: center;
+      position: relative;
+      display: inline-block;
+
+      @media(max-width:767px){
+      width: 20%;}
+
+  }
+  .sup_img {
+display: none;
+position: absolute; // position it over the text if needed
+top: 0;
+left: 2rem;
+
+}
+.sup:hover {
+
+  .sup_text{
+display: none;
+  }
+
+}
+
+.sup:hover .sup_img {
+display: block;
+
+}
+
+
+   .sup:not(:first-child){
+      border-right: 1px solid #E1D6CC;
+  }
+  .sup1{
+
+      width: 30%;
+      padding: 1rem 4rem;
+      text-align: center;
+      position: relative;
+      display: inline-block;
+
+  }
+  .sup1:hover {
+
+  .sup_text{
+display: none;
+  }
+
+}
+
+.sup1:hover .sup_img {
+display: block;
+
+}
+  .sup1:not(:first-child){
+      border-right: 1px solid #E1D6CC;
+  }
 }
 #container{
-    row-gap: 2rem;
+  row-gap: 2rem;
 }

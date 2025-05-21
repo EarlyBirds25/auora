@@ -9,23 +9,21 @@
 
         <div
             class="flex relative flex-col justify-center items-end p-20 mt-8 max-w-full rounded-2xl min-h-[600px] sm:h[400px] w-[909px] max-md:pl-5">
-            <img data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="300" src="../../../assets/images/Rectangle 9977.png" class="object-cover absolute inset-0 size-full"
+            <img data-aos="zoom-in" data-aos-duration="2500" data-aos-delay="500" [src]="currentItem.image" class="object-cover absolute inset-0 size-full"
                 alt="Living room background" />
 
-            <article data-aos="fade-left" data-aos-duration="1500" data-aos-delay="200" class=" flex relative  left-[30px] sm:left-[377px] top-[367px]  sm:top-[0px] flex-col mt-[-33rem] sm:mt-0 pt-14 mr-0   rounded-2xl border border-solid 
-                bg-darkBg dark:bg-lightBg text-textLight dark:text-textDark bg-opacity-90 border-white border-opacity-10 
+            <article data-aos="fade-left" data-aos-duration="1500" data-aos-delay="200" class=" flex relative  left-[30px] sm:left-[377px] top-[367px]  sm:top-[0px] flex-col mt-[-33rem] sm:mt-0 pt-14 mr-0   rounded-2xl border border-solid
+                bg-darkBg dark:bg-lightBg text-textLight dark:text-textDark bg-opacity-90 border-white border-opacity-10
                 w-full sm:w-[594px]   ">
                 <div
                     class="flex flex-col items-center px-16 text-base font-bold text-center text-zinc-600 max-md:px-5 max-md:max-w-full">
                     <h3 class="max-w-full text-3xl text-[#B9572F] w-[382px]">
-                        غرفة المعيشة
+                        {{ currentItem.tittle }}
                     </h3>
 
                     <p
                         class="self-stretch mt-12 opacity-60 text-textLight dark:text-textDark text-lg max-md:mt-10 max-md:max-w-full text-center justify-start tex font-normal font-['Almarai']">
-                        لوريم إيبسوم هو نص مؤقت يستخدم في التصميم والنشر لإظهار شكل
-                        الوثيقة أو الخط دون الاعتماد على محتوى معنوي. قد يستخدم لوريم
-                        إيبسوم كنص بديل قبل وضع النص النهائي
+                        {{ currentItem.description }}
                     </p>
 
                     <blockquote
@@ -46,11 +44,11 @@
                 </div>
 
                 <div class="flex gap-1 self-start mt-3">
-                    <button>
+                    <button (click)="showPrevious()">
                         <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/d6612b4b8ef6e6f0728c89e274dfe23974ef0a7a87765c7c0e4b3d42a1a840c1?placeholderIfAbsent=true&apiKey=d7ab9bab3e364b1c95732b06062da3e2"
                             class="object-contain shrink-0 aspect-[1.01] w-[93px]" alt="Previous" />
                     </button>
-                    <button>
+                    <button (click)="showNext()" >
                         <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/ffc3dab0a06b49fae3da19040d4264f933c47e000ca2da7e9aad6311ea1c00c7?placeholderIfAbsent=true&apiKey=d7ab9bab3e364b1c95732b06062da3e2"
                             class="object-contain shrink-0 aspect-[1.01] w-[93px]" alt="Next" />
                     </button>
